@@ -1,0 +1,460 @@
+task_id,created_date,subject,task_type,priority,estimated_duration,deadline,days_until_deadline,created_weekday,created_month,completed_on_time,is_synthetic
+1,2025-11-01,Python,Projects,High,211,2025-11-06,5,5,11,0,True
+2,2025-11-02,Python,Series,Low,94,2025-11-10,8,6,11,0,True
+3,2025-11-02,TCF prepa,Projects,High,180,2025-11-07,5,6,11,1,True
+4,2025-11-03,TCF prepa,Series,Medium,137,2025-11-11,8,0,11,0,True
+5,2025-11-04,Languages,Tests,High,127,2025-11-08,4,1,11,1,True
+6,2025-11-05,Python,Series,High,123,2025-11-10,5,2,11,1,True
+7,2025-11-06,TCF prepa,TD,Low,95,2025-11-10,4,3,11,1,True
+8,2025-11-07,Big Data,Series,High,185,2025-11-15,8,4,11,1,True
+9,2025-11-08,Entretien Campus,TD,Medium,164,2025-11-17,9,5,11,0,True
+10,2025-11-08,Big Data,Series,High,129,2025-11-15,7,5,11,1,True
+11,2025-11-09,Big Data,TD,Medium,212,2025-11-11,2,6,11,0,True
+12,2025-11-10,Data Warehouse,Projects,Medium,201,2025-11-16,6,0,11,1,True
+13,2025-11-10,Entretien Campus,TD,Medium,67,2025-11-11,1,0,11,1,True
+14,2025-11-11,Entretien Campus,TD,Medium,122,2025-11-17,6,1,11,1,True
+15,2025-11-12,ML,Series,Low,126,2025-11-14,2,2,11,0,True
+16,2025-11-12,RO,Series,Low,150,2025-11-17,5,2,11,0,True
+17,2025-11-13,Languages,Cours,Medium,144,2025-11-17,4,3,11,1,True
+18,2025-11-14,Big Data,TP,High,91,2025-11-24,10,4,11,0,True
+19,2025-11-15,TCF prepa,TD,Medium,136,2025-11-23,8,5,11,0,True
+20,2025-11-16,Languages,Series,Medium,165,2025-11-19,3,6,11,0,True
+21,2025-11-17,Python,TP,Medium,151,2025-11-25,8,0,11,1,True
+22,2025-11-18,RO,Series,Low,238,2025-11-23,5,1,11,1,True
+23,2025-11-18,Python,Cours,Medium,108,2025-11-21,3,1,11,1,True
+24,2025-11-19,Data Warehouse,Projects,Low,54,2025-11-24,5,2,11,0,True
+25,2025-11-19,Languages,Cours,Medium,339,2025-11-20,1,2,11,0,True
+26,2025-11-20,Data Warehouse,Projects,Medium,97,2025-11-25,5,3,11,1,True
+27,2025-11-21,RO,TP,High,139,2025-11-30,9,4,11,1,True
+28,2025-11-22,Python,Cours,Medium,264,2025-11-25,3,5,11,0,True
+29,2025-11-22,Proba,Cours,High,72,2025-11-25,3,5,11,1,True
+30,2025-11-23,Proba,Series,High,91,2025-11-26,3,6,11,1,True
+31,2025-11-24,Entretien Campus,TD,High,178,2025-11-30,6,0,11,0,True
+32,2025-11-24,RO,Cours,High,160,2025-12-03,9,0,11,0,True
+33,2025-11-25,Languages,TP,High,123,2025-11-29,4,1,11,1,True
+34,2025-11-26,Python,TP,High,61,2025-11-29,3,2,11,0,True
+35,2025-11-26,Entretien Campus,Cours,Low,244,2025-12-04,8,2,11,1,True
+36,2025-11-27,Entretien Campus,Series,High,149,2025-12-02,5,3,11,1,True
+37,2025-11-27,Big Data,TD,Medium,30,2025-11-29,2,3,11,0,True
+38,2025-11-28,Data Warehouse,TP,High,209,2025-11-30,2,4,11,1,True
+39,2025-11-28,ML,Cours,High,118,2025-12-08,10,4,11,0,True
+40,2025-11-29,Proba,Tests,Medium,104,2025-12-04,5,5,11,1,True
+41,2025-11-30,TCF prepa,Cours,Low,164,2025-12-01,1,6,11,0,True
+42,2025-12-01,Python,Series,Medium,111,2025-12-10,9,0,12,0,True
+43,2025-12-01,RO,TD,Medium,139,2025-12-09,8,0,12,0,True
+44,2025-12-02,Data Warehouse,TD,Medium,223,2025-12-07,5,1,12,0,True
+45,2025-12-02,Proba,TP,Medium,66,2025-12-12,10,1,12,0,True
+46,2025-12-03,Entretien Campus,Cours,Low,126,2025-12-07,4,2,12,0,True
+47,2025-12-03,Big Data,TD,Low,200,2025-12-07,4,2,12,1,True
+48,2025-12-04,Big Data,TP,Low,132,2025-12-06,2,3,12,1,True
+49,2025-12-04,ML,Projects,Medium,160,2025-12-13,9,3,12,0,True
+50,2025-12-05,TCF prepa,Tests,Low,143,2025-12-08,3,4,12,1,True
+51,2025-12-06,Proba,Cours,Medium,166,2025-12-15,9,5,12,0,True
+52,2025-12-07,RO,Cours,High,36,2025-12-16,9,6,12,0,True
+53,2025-12-08,Proba,Tests,High,167,2025-12-15,7,0,12,1,True
+54,2025-12-08,Data Warehouse,Series,Medium,245,2025-12-14,6,0,12,1,True
+55,2025-12-09,Data Warehouse,TD,Low,35,2025-12-12,3,1,12,1,True
+56,2025-12-09,ML,TP,Medium,128,2025-12-14,5,1,12,1,True
+57,2025-12-10,TCF prepa,Tests,High,262,2025-12-18,8,2,12,0,True
+58,2025-12-11,Languages,Projects,High,130,2025-12-19,8,3,12,0,True
+59,2025-12-12,RO,TD,Medium,137,2025-12-22,10,4,12,0,True
+60,2025-12-12,Data Warehouse,Projects,High,145,2025-12-13,1,4,12,0,True
+61,2025-12-13,TCF prepa,TP,High,104,2025-12-19,6,5,12,0,True
+62,2025-12-14,Proba,Series,Low,170,2025-12-20,6,6,12,1,True
+63,2025-12-15,Languages,Series,High,176,2025-12-21,6,0,12,1,True
+64,2025-12-16,Entretien Campus,Tests,Low,245,2025-12-18,2,1,12,0,True
+65,2025-12-17,ML,Tests,Medium,219,2025-12-25,8,2,12,0,True
+66,2025-12-17,TCF prepa,Series,Medium,93,2025-12-23,6,2,12,1,True
+67,2025-12-18,RO,Tests,Medium,141,2025-12-20,2,3,12,0,True
+68,2025-12-19,ML,Series,Medium,150,2025-12-26,7,4,12,0,True
+69,2025-12-19,Entretien Campus,TP,High,136,2025-12-21,2,4,12,1,True
+70,2025-12-20,Python,Projects,Medium,45,2025-12-21,1,5,12,1,True
+71,2025-12-21,ML,Cours,High,167,2025-12-25,4,6,12,0,True
+72,2025-12-22,TCF prepa,Series,High,195,2025-12-25,3,0,12,0,True
+73,2025-12-23,Data Warehouse,Cours,Low,164,2025-12-30,7,1,12,1,True
+74,2025-12-24,Big Data,Tests,Low,124,2026-01-01,8,2,12,1,True
+75,2025-12-25,RO,Cours,Medium,65,2025-12-26,1,3,12,0,True
+76,2025-12-26,RO,Series,High,162,2026-01-04,9,4,12,0,True
+77,2025-12-27,RO,TP,Low,143,2025-12-30,3,5,12,0,True
+78,2025-12-28,Data Warehouse,Cours,Low,53,2026-01-06,9,6,12,1,True
+79,2025-12-28,RO,Series,High,60,2026-01-03,6,6,12,1,True
+80,2025-12-29,Big Data,Tests,High,210,2026-01-02,4,0,12,0,True
+81,2025-12-30,Data Warehouse,TP,High,137,2026-01-08,9,1,12,0,True
+82,2025-12-31,Languages,TD,Medium,219,2026-01-03,3,2,12,0,True
+83,2025-12-31,Data Warehouse,Cours,Medium,172,2026-01-02,2,2,12,1,True
+84,2026-01-01,Big Data,Tests,Medium,95,2026-01-04,3,3,1,1,True
+85,2026-01-01,Entretien Campus,TP,Medium,46,2026-01-11,10,3,1,1,True
+86,2026-01-02,Proba,TP,Medium,221,2026-01-03,1,4,1,0,True
+87,2026-01-02,Data Warehouse,Projects,Medium,190,2026-01-09,7,4,1,0,True
+88,2026-01-03,Languages,TD,Medium,318,2026-01-08,5,5,1,0,True
+89,2026-01-04,TCF prepa,Cours,Medium,138,2026-01-14,10,6,1,0,True
+90,2026-01-04,Proba,TD,High,193,2026-01-13,9,6,1,1,True
+91,2026-01-05,Data Warehouse,TP,Low,210,2026-01-06,1,0,1,0,True
+92,2026-01-05,Python,Series,Medium,208,2026-01-14,9,0,1,1,True
+93,2026-01-06,ML,Projects,High,178,2026-01-16,10,1,1,0,True
+94,2026-01-06,Big Data,Series,Medium,156,2026-01-10,4,1,1,1,True
+95,2026-01-07,Languages,Cours,Low,208,2026-01-17,10,2,1,0,True
+96,2026-01-08,TCF prepa,Tests,Low,241,2026-01-17,9,3,1,0,True
+97,2026-01-08,ML,Cours,Medium,126,2026-01-13,5,3,1,0,True
+98,2026-01-09,RO,Projects,Medium,114,2026-01-12,3,4,1,1,True
+99,2026-01-09,RO,Cours,Medium,96,2026-01-18,9,4,1,0,True
+100,2026-01-10,TCF prepa,Series,Low,84,2026-01-18,8,5,1,0,True
+101,2026-01-10,Languages,TD,High,282,2026-01-15,5,5,1,0,True
+102,2026-01-11,Data Warehouse,Cours,Medium,92,2026-01-20,9,6,1,0,True
+103,2026-01-12,Data Warehouse,TP,Medium,198,2026-01-14,2,0,1,0,True
+104,2026-01-12,Python,TP,Medium,55,2026-01-18,6,0,1,0,True
+105,2026-01-13,Languages,Projects,High,236,2026-01-22,9,1,1,0,True
+106,2026-01-14,Languages,Series,High,130,2026-01-19,5,2,1,0,True
+107,2026-01-15,TCF prepa,TP,Medium,165,2026-01-20,5,3,1,0,True
+108,2026-01-15,Entretien Campus,Cours,High,42,2026-01-18,3,3,1,0,True
+109,2026-01-16,Languages,Tests,Medium,34,2026-01-26,10,4,1,0,True
+110,2026-01-16,Data Warehouse,Cours,Medium,108,2026-01-19,3,4,1,0,True
+111,2026-01-17,Proba,Cours,Medium,184,2026-01-21,4,5,1,0,True
+112,2026-01-17,RO,Projects,High,66,2026-01-25,8,5,1,1,True
+113,2026-01-18,Proba,Cours,High,152,2026-01-25,7,6,1,0,True
+114,2026-01-18,Languages,Cours,Medium,123,2026-01-25,7,6,1,0,True
+115,2026-01-19,Languages,TP,High,123,2026-01-27,8,0,1,1,True
+116,2026-01-19,Data Warehouse,Projects,Low,187,2026-01-28,9,0,1,0,True
+117,2026-01-20,TCF prepa,Projects,Medium,128,2026-01-30,10,1,1,1,True
+118,2026-01-21,Entretien Campus,Tests,Medium,160,2026-01-29,8,2,1,0,True
+119,2026-01-22,Languages,TP,Medium,78,2026-01-24,2,3,1,1,True
+120,2026-01-23,Languages,Tests,Medium,128,2026-01-30,7,4,1,0,True
+121,2026-01-24,Python,Projects,Medium,144,2026-01-30,6,5,1,1,True
+122,2026-01-24,Entretien Campus,Tests,Medium,30,2026-01-27,3,5,1,1,True
+123,2026-01-25,TCF prepa,TD,Medium,172,2026-01-29,4,6,1,1,True
+124,2026-01-25,TCF prepa,TD,High,203,2026-02-02,8,6,1,0,True
+125,2026-01-26,Python,TD,High,121,2026-02-04,9,0,1,1,True
+126,2026-01-26,Proba,Cours,Medium,122,2026-02-03,8,0,1,1,True
+127,2026-01-27,Entretien Campus,Tests,Low,99,2026-01-28,1,1,1,1,True
+128,2026-01-27,Proba,TD,Medium,134,2026-02-02,6,1,1,1,True
+129,2026-01-28,RO,Tests,Medium,186,2026-02-04,7,2,1,1,True
+130,2026-01-28,Big Data,Cours,Low,82,2026-01-30,2,2,1,1,True
+131,2026-01-29,RO,TD,Medium,127,2026-02-03,5,3,1,1,True
+132,2026-01-30,Data Warehouse,TD,Medium,90,2026-02-03,4,4,1,0,True
+133,2026-01-30,Proba,TP,Medium,179,2026-01-31,1,4,1,1,True
+134,2026-01-31,Big Data,Cours,Low,200,2026-02-10,10,5,1,1,True
+135,2026-02-01,Data Warehouse,TP,Medium,83,2026-02-04,3,6,2,0,True
+136,2026-02-01,Languages,Cours,High,266,2026-02-06,5,6,2,0,True
+137,2026-02-02,Entretien Campus,Tests,Medium,130,2026-02-08,6,0,2,0,True
+138,2026-02-03,RO,TP,High,205,2026-02-09,6,1,2,1,True
+139,2026-02-04,Languages,TP,Medium,191,2026-02-13,9,2,2,1,True
+140,2026-02-04,RO,Series,High,259,2026-02-06,2,2,2,0,True
+141,2026-02-05,Proba,Cours,Medium,150,2026-02-14,9,3,2,0,True
+142,2026-02-05,RO,TD,Medium,65,2026-02-08,3,3,2,0,True
+143,2026-02-06,Data Warehouse,Projects,Low,166,2026-02-07,1,4,2,1,True
+144,2026-02-07,Big Data,TD,Low,68,2026-02-09,2,5,2,0,True
+145,2026-02-07,Proba,TD,Medium,218,2026-02-08,1,5,2,0,True
+146,2026-02-08,Proba,Projects,Medium,172,2026-02-15,7,6,2,0,True
+147,2026-02-08,Python,Projects,High,69,2026-02-10,2,6,2,1,True
+148,2026-02-09,RO,Series,Medium,117,2026-02-19,10,0,2,0,True
+149,2026-02-10,Data Warehouse,TP,Medium,167,2026-02-14,4,1,2,1,True
+150,2026-02-11,Entretien Campus,Tests,High,74,2026-02-15,4,2,2,0,True
+151,2026-02-11,Languages,Projects,Medium,228,2026-02-15,4,2,2,0,True
+152,2026-02-12,TCF prepa,Tests,Low,125,2026-02-18,6,3,2,0,True
+153,2026-02-12,TCF prepa,Series,Low,242,2026-02-17,5,3,2,0,True
+154,2026-02-13,Entretien Campus,TP,High,143,2026-02-20,7,4,2,1,True
+155,2026-02-13,ML,Projects,Medium,212,2026-02-19,6,4,2,0,True
+156,2026-02-14,Languages,Cours,Medium,168,2026-02-16,2,5,2,1,True
+157,2026-02-14,Proba,Series,Medium,193,2026-02-22,8,5,2,0,True
+158,2026-02-15,Data Warehouse,Tests,Medium,204,2026-02-25,10,6,2,1,True
+159,2026-02-16,Languages,TD,Low,84,2026-02-17,1,0,2,1,True
+160,2026-02-17,TCF prepa,Cours,Medium,135,2026-02-21,4,1,2,0,True
+161,2026-02-17,Python,Series,High,77,2026-02-27,10,1,2,0,True
+162,2026-02-18,RO,TP,Medium,121,2026-02-20,2,2,2,0,True
+163,2026-02-18,Python,Projects,Medium,123,2026-02-19,1,2,2,0,True
+164,2026-02-19,ML,Projects,High,181,2026-02-28,9,3,2,0,True
+165,2026-02-20,RO,Series,Medium,109,2026-02-25,5,4,2,0,True
+166,2026-02-21,Python,Cours,Medium,80,2026-02-28,7,5,2,1,True
+167,2026-02-22,Big Data,TD,High,225,2026-02-28,6,6,2,1,True
+168,2026-02-23,Python,TD,Medium,129,2026-02-24,1,0,2,0,True
+169,2026-02-23,Entretien Campus,Cours,Medium,272,2026-03-03,8,0,2,1,True
+170,2026-02-24,ML,TP,Low,179,2026-02-26,2,1,2,0,True
+171,2026-02-24,Big Data,Cours,Medium,75,2026-02-26,2,1,2,1,True
+172,2026-02-25,Big Data,Tests,Medium,181,2026-02-26,1,2,2,1,True
+173,2026-02-26,Data Warehouse,TD,High,174,2026-03-07,9,3,2,1,True
+174,2026-02-27,TCF prepa,Tests,Medium,103,2026-03-09,10,4,2,0,True
+175,2026-02-27,ML,Projects,High,176,2026-03-06,7,4,2,0,True
+176,2026-02-28,ML,TD,Low,61,2026-03-07,7,5,2,1,True
+177,2026-02-28,ML,TP,Low,131,2026-03-08,8,5,2,0,True
+178,2026-03-01,Data Warehouse,TD,High,221,2026-03-05,4,6,3,1,True
+179,2026-03-01,Data Warehouse,Projects,Medium,164,2026-03-11,10,6,3,0,True
+180,2026-03-02,RO,Tests,High,130,2026-03-07,5,0,3,1,True
+181,2026-03-02,ML,Tests,Medium,235,2026-03-06,4,0,3,0,True
+182,2026-03-03,Data Warehouse,Projects,High,203,2026-03-05,2,1,3,1,True
+183,2026-03-04,Languages,TP,Low,172,2026-03-08,4,2,3,0,True
+184,2026-03-04,Python,TD,Medium,243,2026-03-05,1,2,3,0,True
+185,2026-03-05,TCF prepa,Series,Medium,153,2026-03-08,3,3,3,1,True
+186,2026-03-05,Proba,TD,Medium,170,2026-03-13,8,3,3,0,True
+187,2026-03-06,Python,Tests,Medium,152,2026-03-10,4,4,3,0,True
+188,2026-03-07,Languages,TP,Medium,181,2026-03-13,6,5,3,0,True
+189,2026-03-07,ML,Tests,Medium,202,2026-03-14,7,5,3,0,True
+190,2026-03-08,Proba,Tests,Medium,156,2026-03-14,6,6,3,1,True
+191,2026-03-09,Entretien Campus,Tests,High,178,2026-03-19,10,0,3,0,True
+192,2026-03-10,Python,Cours,Medium,245,2026-03-15,5,1,3,0,True
+193,2026-03-11,Proba,TD,Medium,140,2026-03-14,3,2,3,0,True
+194,2026-03-11,Proba,Tests,Low,146,2026-03-12,1,2,3,0,True
+195,2026-03-12,Big Data,Tests,Low,137,2026-03-19,7,3,3,0,True
+196,2026-03-13,Proba,TD,Low,235,2026-03-18,5,4,3,0,True
+197,2026-03-14,Proba,Tests,Low,140,2026-03-20,6,5,3,0,True
+198,2026-03-14,TCF prepa,TD,Low,49,2026-03-21,7,5,3,1,True
+199,2026-03-15,Languages,TD,Medium,161,2026-03-21,6,6,3,0,True
+200,2026-03-15,RO,Tests,Medium,252,2026-03-22,7,6,3,0,True
+201,2026-03-16,Proba,TD,Medium,189,2026-03-19,3,0,3,1,True
+202,2026-03-16,RO,TD,High,98,2026-03-24,8,0,3,1,True
+203,2026-03-17,Python,Series,Medium,134,2026-03-26,9,1,3,0,True
+204,2026-03-18,RO,TD,Medium,85,2026-03-20,2,2,3,1,True
+205,2026-03-18,RO,TP,High,138,2026-03-22,4,2,3,0,True
+206,2026-03-19,ML,TD,Low,30,2026-03-22,3,3,3,0,True
+207,2026-03-19,TCF prepa,Cours,Medium,233,2026-03-20,1,3,3,0,True
+208,2026-03-20,Languages,Projects,Medium,30,2026-03-28,8,4,3,1,True
+209,2026-03-21,Python,Tests,Low,125,2026-03-23,2,5,3,0,True
+210,2026-03-21,RO,TP,High,167,2026-03-31,10,5,3,1,True
+211,2026-03-22,Big Data,Tests,High,30,2026-03-27,5,6,3,0,True
+212,2026-03-22,Big Data,Tests,High,85,2026-03-25,3,6,3,0,True
+213,2026-03-23,Python,TP,Low,75,2026-03-24,1,0,3,1,True
+214,2026-03-24,ML,TD,High,100,2026-04-01,8,1,3,1,True
+215,2026-03-25,Languages,Cours,Medium,97,2026-03-29,4,2,3,1,True
+216,2026-03-26,Big Data,Projects,Medium,189,2026-04-04,9,3,3,0,True
+217,2026-03-27,Languages,Series,High,198,2026-04-01,5,4,3,1,True
+218,2026-03-28,Big Data,TD,Medium,81,2026-04-04,7,5,3,1,True
+219,2026-03-29,Big Data,Cours,High,106,2026-03-31,2,6,3,1,True
+220,2026-03-29,Languages,TP,Medium,207,2026-04-03,5,6,3,0,True
+221,2026-03-30,RO,Tests,Low,60,2026-03-31,1,0,3,1,True
+222,2026-03-31,Big Data,Tests,High,233,2026-04-07,7,1,3,0,True
+223,2026-04-01,ML,Cours,Medium,197,2026-04-06,5,2,4,0,True
+224,2026-04-01,Entretien Campus,Tests,High,73,2026-04-03,2,2,4,0,True
+225,2026-04-02,ML,Series,Medium,151,2026-04-06,4,3,4,1,True
+226,2026-04-02,Entretien Campus,Cours,High,84,2026-04-08,6,3,4,1,True
+227,2026-04-03,TCF prepa,Projects,High,32,2026-04-11,8,4,4,1,True
+228,2026-04-04,Entretien Campus,Projects,Medium,169,2026-04-08,4,5,4,1,True
+229,2026-04-05,RO,TP,Low,118,2026-04-11,6,6,4,1,True
+230,2026-04-05,Python,Series,High,142,2026-04-11,6,6,4,0,True
+231,2026-04-06,Entretien Campus,TD,Medium,249,2026-04-12,6,0,4,0,True
+232,2026-04-06,TCF prepa,TP,High,109,2026-04-16,10,0,4,0,True
+233,2026-04-07,Entretien Campus,Projects,Low,227,2026-04-09,2,1,4,1,True
+234,2026-04-08,Languages,Cours,High,63,2026-04-17,9,2,4,1,True
+235,2026-04-08,TCF prepa,Cours,Low,124,2026-04-11,3,2,4,1,True
+236,2026-04-09,Entretien Campus,Cours,High,74,2026-04-19,10,3,4,0,True
+237,2026-04-10,ML,Cours,High,199,2026-04-12,2,4,4,0,True
+238,2026-04-10,Python,Projects,Medium,30,2026-04-12,2,4,4,0,True
+239,2026-04-11,Big Data,Tests,Medium,186,2026-04-19,8,5,4,1,True
+240,2026-04-12,Languages,TP,Medium,100,2026-04-19,7,6,4,1,True
+241,2026-04-12,Python,Cours,Medium,169,2026-04-13,1,6,4,1,True
+242,2026-04-13,Big Data,TP,Low,206,2026-04-17,4,0,4,0,True
+243,2026-04-13,ML,Tests,Low,192,2026-04-23,10,0,4,1,True
+244,2026-04-14,Big Data,TP,Low,115,2026-04-18,4,1,4,0,True
+245,2026-04-14,Entretien Campus,Projects,High,209,2026-04-15,1,1,4,0,True
+246,2026-04-15,RO,TD,High,172,2026-04-25,10,2,4,0,True
+247,2026-04-16,Big Data,Series,High,123,2026-04-22,6,3,4,1,True
+248,2026-04-16,Entretien Campus,Cours,High,206,2026-04-24,8,3,4,0,True
+249,2026-04-17,Big Data,Cours,High,212,2026-04-23,6,4,4,0,True
+250,2026-04-18,Data Warehouse,Tests,High,148,2026-04-28,10,5,4,1,True
+251,2026-04-18,TCF prepa,Tests,High,229,2026-04-27,9,5,4,1,True
+252,2026-04-19,ML,TD,Medium,231,2026-04-23,4,6,4,0,True
+253,2026-04-19,Python,TP,High,246,2026-04-20,1,6,4,1,True
+254,2026-04-20,Proba,Tests,Medium,138,2026-04-27,7,0,4,0,True
+255,2026-04-21,RO,TD,Low,136,2026-05-01,10,1,4,1,True
+256,2026-04-21,RO,TP,Medium,149,2026-05-01,10,1,4,0,True
+257,2026-04-22,Data Warehouse,Projects,High,238,2026-05-01,9,2,4,1,True
+258,2026-04-22,ML,TP,High,151,2026-04-26,4,2,4,1,True
+259,2026-04-23,Data Warehouse,TD,Medium,90,2026-04-25,2,3,4,0,True
+260,2026-04-23,ML,Tests,High,89,2026-04-25,2,3,4,1,True
+261,2026-04-24,Languages,Cours,Medium,30,2026-04-30,6,4,4,1,True
+262,2026-04-24,Entretien Campus,TP,Low,59,2026-04-27,3,4,4,1,True
+263,2026-04-25,Data Warehouse,Tests,Medium,130,2026-04-28,3,5,4,0,True
+264,2026-04-26,Python,Projects,High,245,2026-05-01,5,6,4,0,True
+265,2026-04-27,Python,Projects,Medium,173,2026-05-05,8,0,4,0,True
+266,2026-04-27,Python,Series,Medium,214,2026-05-01,4,0,4,0,True
+267,2026-04-28,Languages,Projects,High,157,2026-05-01,3,1,4,1,True
+268,2026-04-29,Python,TD,Medium,286,2026-05-08,9,2,4,0,True
+269,2026-04-30,Big Data,TD,Medium,186,2026-05-02,2,3,4,0,True
+270,2026-04-30,Python,Series,High,97,2026-05-08,8,3,4,1,True
+271,2026-05-01,ML,TD,Medium,148,2026-05-09,8,4,5,1,True
+272,2026-05-02,ML,TP,High,75,2026-05-04,2,5,5,0,True
+273,2026-05-02,TCF prepa,TD,Medium,171,2026-05-05,3,5,5,1,True
+274,2026-05-03,Proba,Tests,Medium,158,2026-05-11,8,6,5,1,True
+275,2026-05-03,Python,TD,Medium,40,2026-05-09,6,6,5,0,True
+276,2026-05-04,ML,TP,Medium,30,2026-05-11,7,0,5,0,True
+277,2026-05-04,Entretien Campus,Series,High,220,2026-05-14,10,0,5,1,True
+278,2026-05-05,Languages,TP,Medium,170,2026-05-10,5,1,5,0,True
+279,2026-05-05,Entretien Campus,Cours,Medium,198,2026-05-06,1,1,5,0,True
+280,2026-05-06,Python,Tests,High,204,2026-05-08,2,2,5,1,True
+281,2026-05-06,ML,Projects,Medium,97,2026-05-16,10,2,5,1,True
+282,2026-05-07,Big Data,Series,High,126,2026-05-08,1,3,5,0,True
+283,2026-05-08,Python,Series,Low,202,2026-05-10,2,4,5,0,True
+284,2026-05-09,Big Data,TD,High,88,2026-05-16,7,5,5,0,True
+285,2026-05-09,Data Warehouse,TD,Medium,46,2026-05-16,7,5,5,0,True
+286,2026-05-10,Data Warehouse,Series,Medium,55,2026-05-19,9,6,5,1,True
+287,2026-05-11,ML,Tests,Low,227,2026-05-20,9,0,5,0,True
+288,2026-05-12,Python,Cours,Medium,44,2026-05-14,2,1,5,1,True
+289,2026-05-12,ML,Projects,Medium,58,2026-05-17,5,1,5,0,True
+290,2026-05-13,Entretien Campus,Cours,Medium,165,2026-05-18,5,2,5,0,True
+291,2026-05-14,Python,Tests,Medium,57,2026-05-15,1,3,5,1,True
+292,2026-05-15,Proba,TD,High,125,2026-05-23,8,4,5,1,True
+293,2026-05-16,Proba,TD,High,184,2026-05-18,2,5,5,0,True
+294,2026-05-17,ML,TD,Low,153,2026-05-18,1,6,5,0,True
+295,2026-05-17,Big Data,TD,High,223,2026-05-20,3,6,5,1,True
+296,2026-05-18,TCF prepa,Tests,Medium,95,2026-05-24,6,0,5,0,True
+297,2026-05-18,Python,Cours,High,213,2026-05-28,10,0,5,0,True
+298,2026-05-19,Languages,Tests,High,30,2026-05-27,8,1,5,1,True
+299,2026-05-20,Languages,Series,Medium,138,2026-05-26,6,2,5,0,True
+300,2026-05-21,Entretien Campus,Series,High,124,2026-05-24,3,3,5,1,True
+301,2026-05-21,ML,Series,High,198,2026-05-30,9,3,5,0,True
+302,2026-05-22,ML,TP,Medium,266,2026-05-23,1,4,5,1,True
+303,2026-05-22,Entretien Campus,Projects,Medium,104,2026-05-31,9,4,5,0,True
+304,2026-05-23,TCF prepa,Series,High,45,2026-05-27,4,5,5,0,True
+305,2026-05-24,TCF prepa,Tests,Medium,83,2026-05-25,1,6,5,1,True
+306,2026-05-24,Languages,Cours,Medium,115,2026-06-01,8,6,5,0,True
+307,2026-05-25,TCF prepa,Cours,High,139,2026-05-31,6,0,5,0,True
+308,2026-05-26,Proba,TD,Medium,119,2026-06-03,8,1,5,1,True
+309,2026-05-26,Proba,TP,High,159,2026-06-05,10,1,5,1,True
+310,2026-05-27,Languages,Cours,Medium,216,2026-06-01,5,2,5,0,True
+311,2026-05-28,TCF prepa,Cours,Medium,142,2026-06-01,4,3,5,0,True
+312,2026-05-28,Big Data,Tests,High,115,2026-06-06,9,3,5,1,True
+313,2026-05-29,Big Data,Cours,Low,274,2026-05-30,1,4,5,0,True
+314,2026-05-30,Python,Projects,High,152,2026-06-04,5,5,5,1,True
+315,2026-05-31,Entretien Campus,Series,Medium,209,2026-06-02,2,6,5,0,True
+316,2026-05-31,Languages,Series,Low,246,2026-06-03,3,6,5,0,True
+317,2026-06-01,Proba,Tests,High,112,2026-06-08,7,0,6,1,True
+318,2026-06-02,Big Data,TP,High,107,2026-06-09,7,1,6,1,True
+319,2026-06-04,Proba,Projects,Medium,83,2026-06-14,10,3,6,0,True
+320,2026-06-06,Python,Projects,Low,81,2026-06-13,7,5,6,1,True
+321,2026-06-07,Proba,TD,High,120,2026-06-12,5,6,6,1,True
+322,2026-06-08,Languages,Cours,High,62,2026-06-15,7,0,6,1,True
+323,2026-06-09,Python,Cours,Medium,30,2026-06-10,1,1,6,0,True
+324,2026-06-12,Languages,Tests,Medium,169,2026-06-22,10,4,6,1,True
+325,2026-06-13,RO,Projects,High,30,2026-06-18,5,5,6,1,True
+326,2026-06-14,Big Data,Cours,Low,147,2026-06-24,10,6,6,1,True
+327,2026-06-18,Big Data,TD,High,149,2026-06-20,2,3,6,0,True
+328,2026-06-19,ML,Tests,Medium,167,2026-06-23,4,4,6,1,True
+329,2026-06-21,Entretien Campus,Cours,Medium,133,2026-07-01,10,6,6,0,True
+330,2026-06-23,Proba,TD,Medium,92,2026-06-26,3,1,6,0,True
+331,2026-06-26,Entretien Campus,Tests,High,153,2026-06-27,1,4,6,1,True
+332,2026-06-29,Data Warehouse,Projects,Medium,246,2026-07-08,9,0,6,1,True
+333,2026-07-03,TCF prepa,Tests,Medium,152,2026-07-08,5,4,7,1,True
+334,2026-07-04,Proba,Cours,Medium,130,2026-07-06,2,5,7,1,True
+335,2026-07-05,Data Warehouse,Series,High,175,2026-07-06,1,6,7,1,True
+336,2026-07-06,ML,TP,High,168,2026-07-07,1,0,7,1,True
+337,2026-07-07,Entretien Campus,TP,Low,206,2026-07-13,6,1,7,0,True
+338,2026-07-09,Entretien Campus,Tests,Medium,197,2026-07-19,10,3,7,1,True
+339,2026-07-11,RO,Cours,High,156,2026-07-15,4,5,7,1,True
+340,2026-07-13,Data Warehouse,Series,High,185,2026-07-14,1,0,7,1,True
+341,2026-07-15,Proba,TD,Medium,49,2026-07-16,1,2,7,1,True
+342,2026-07-17,Data Warehouse,Tests,Medium,189,2026-07-23,6,4,7,0,True
+343,2026-07-19,Entretien Campus,Projects,High,119,2026-07-20,1,6,7,0,True
+344,2026-07-21,Big Data,Projects,Low,30,2026-07-22,1,1,7,1,True
+345,2026-07-22,Data Warehouse,Projects,Low,54,2026-07-30,8,2,7,0,True
+346,2026-07-25,Languages,TP,Medium,72,2026-08-04,10,5,7,0,True
+347,2026-07-26,RO,TP,Low,38,2026-08-03,8,6,7,0,True
+348,2026-07-28,Python,Cours,High,147,2026-07-31,3,1,7,0,True
+349,2026-07-29,Proba,Projects,High,156,2026-08-05,7,2,7,0,True
+350,2026-07-30,Big Data,TP,Medium,90,2026-07-31,1,3,7,1,True
+351,2026-07-31,Python,Cours,Medium,107,2026-08-03,3,4,7,0,True
+352,2026-08-03,Entretien Campus,TD,Low,160,2026-08-10,7,0,8,1,True
+353,2026-08-07,Big Data,Cours,Medium,144,2026-08-10,3,4,8,1,True
+354,2026-08-13,Data Warehouse,TD,Medium,30,2026-08-17,4,3,8,1,True
+355,2026-08-18,TCF prepa,Cours,Medium,98,2026-08-22,4,1,8,1,True
+356,2026-08-19,ML,Tests,Low,175,2026-08-24,5,2,8,0,True
+357,2026-08-22,Data Warehouse,TD,Medium,169,2026-08-30,8,5,8,0,True
+358,2026-08-23,Entretien Campus,Series,Medium,178,2026-08-24,1,6,8,1,True
+359,2026-08-25,Big Data,Cours,Medium,227,2026-08-31,6,1,8,0,True
+360,2026-09-01,Python,Tests,Medium,148,2026-09-02,1,1,9,0,True
+361,2026-09-02,Python,Projects,High,158,2026-09-11,9,2,9,0,True
+362,2026-09-03,Big Data,TP,Medium,30,2026-09-12,9,3,9,0,True
+363,2026-09-03,ML,TD,Medium,124,2026-09-05,2,3,9,1,True
+364,2026-09-04,Python,TP,Medium,169,2026-09-06,2,4,9,1,True
+365,2026-09-04,Proba,Series,Medium,60,2026-09-06,2,4,9,1,True
+366,2026-09-05,RO,Tests,Medium,199,2026-09-11,6,5,9,1,True
+367,2026-09-05,Languages,Series,Low,187,2026-09-13,8,5,9,0,True
+368,2026-09-06,Data Warehouse,Cours,High,55,2026-09-14,8,6,9,1,True
+369,2026-09-07,Languages,Series,Low,212,2026-09-13,6,0,9,0,True
+370,2026-09-08,Proba,TD,Low,30,2026-09-09,1,1,9,1,True
+371,2026-09-08,ML,TD,Low,147,2026-09-13,5,1,9,1,True
+372,2026-09-09,Proba,Cours,Low,75,2026-09-12,3,2,9,0,True
+373,2026-09-10,ML,Tests,Medium,119,2026-09-20,10,3,9,0,True
+374,2026-09-10,Proba,Cours,High,158,2026-09-18,8,3,9,0,True
+375,2026-09-11,TCF prepa,Series,High,32,2026-09-15,4,4,9,0,True
+376,2026-09-11,Languages,Series,Low,103,2026-09-13,2,4,9,0,True
+377,2026-09-12,Python,Series,Medium,81,2026-09-16,4,5,9,1,True
+378,2026-09-13,TCF prepa,Cours,Medium,162,2026-09-23,10,6,9,0,True
+379,2026-09-14,Big Data,TD,High,200,2026-09-22,8,0,9,1,True
+380,2026-09-15,Languages,TD,Medium,162,2026-09-23,8,1,9,1,True
+381,2026-09-16,Languages,Series,Medium,301,2026-09-17,1,2,9,0,True
+382,2026-09-17,Data Warehouse,Tests,Low,166,2026-09-23,6,3,9,0,True
+383,2026-09-17,Big Data,TD,Medium,128,2026-09-23,6,3,9,1,True
+384,2026-09-18,Python,TD,Medium,210,2026-09-19,1,4,9,1,True
+385,2026-09-19,Proba,Cours,Low,80,2026-09-26,7,5,9,0,True
+386,2026-09-20,Big Data,TD,Medium,194,2026-09-24,4,6,9,1,True
+387,2026-09-21,RO,Series,Medium,234,2026-10-01,10,0,9,0,True
+388,2026-09-21,Entretien Campus,Cours,Low,38,2026-09-28,7,0,9,1,True
+389,2026-09-22,Python,TP,Medium,70,2026-09-28,6,1,9,0,True
+390,2026-09-22,Entretien Campus,Projects,Low,125,2026-09-23,1,1,9,0,True
+391,2026-09-23,RO,Series,High,151,2026-10-03,10,2,9,1,True
+392,2026-09-24,ML,Tests,Medium,89,2026-09-30,6,3,9,1,True
+393,2026-09-24,Data Warehouse,TP,Low,138,2026-09-28,4,3,9,1,True
+394,2026-09-25,Python,Projects,High,155,2026-09-28,3,4,9,0,True
+395,2026-09-25,Data Warehouse,TD,High,178,2026-10-01,6,4,9,1,True
+396,2026-09-26,Python,Projects,Medium,265,2026-10-06,10,5,9,1,True
+397,2026-09-26,Python,Series,Medium,107,2026-10-05,9,5,9,1,True
+398,2026-09-27,Languages,Series,High,78,2026-09-28,1,6,9,1,True
+399,2026-09-27,RO,Cours,Medium,181,2026-10-06,9,6,9,1,True
+400,2026-09-28,Python,TD,Low,147,2026-10-01,3,0,9,0,True
+401,2026-09-28,RO,TD,Medium,229,2026-09-30,2,0,9,1,True
+402,2026-09-29,Data Warehouse,TD,Low,47,2026-10-06,7,1,9,0,True
+403,2026-09-29,RO,Tests,High,193,2026-10-09,10,1,9,1,True
+404,2026-09-30,Proba,Series,Medium,220,2026-10-06,6,2,9,0,True
+405,2026-10-01,Entretien Campus,Series,Medium,137,2026-10-02,1,3,10,1,True
+406,2026-10-01,Proba,TD,High,30,2026-10-08,7,3,10,1,True
+407,2026-10-02,RO,TP,Low,158,2026-10-06,4,4,10,1,True
+408,2026-10-02,Entretien Campus,Cours,Medium,230,2026-10-08,6,4,10,0,True
+409,2026-10-03,Big Data,Series,Medium,195,2026-10-08,5,5,10,1,True
+410,2026-10-04,RO,TD,Low,228,2026-10-06,2,6,10,0,True
+411,2026-10-04,RO,Cours,High,101,2026-10-05,1,6,10,1,True
+412,2026-10-05,Languages,Tests,Medium,121,2026-10-13,8,0,10,0,True
+413,2026-10-06,TCF prepa,TP,Medium,233,2026-10-11,5,1,10,0,True
+414,2026-10-07,Entretien Campus,Cours,Medium,153,2026-10-09,2,2,10,1,True
+415,2026-10-08,TCF prepa,TP,Medium,132,2026-10-11,3,3,10,1,True
+416,2026-10-08,Languages,Series,Medium,183,2026-10-11,3,3,10,0,True
+417,2026-10-09,Data Warehouse,Projects,Medium,91,2026-10-11,2,4,10,1,True
+418,2026-10-10,RO,Cours,High,329,2026-10-11,1,5,10,0,True
+419,2026-10-10,RO,Cours,Medium,137,2026-10-19,9,5,10,1,True
+420,2026-10-11,Big Data,Tests,Medium,105,2026-10-17,6,6,10,1,True
+421,2026-10-12,Big Data,Series,High,162,2026-10-16,4,0,10,1,True
+422,2026-10-13,Python,TD,Medium,252,2026-10-19,6,1,10,0,True
+423,2026-10-13,Python,TP,Medium,314,2026-10-18,5,1,10,1,True
+424,2026-10-14,Languages,Cours,High,78,2026-10-15,1,2,10,0,True
+425,2026-10-14,TCF prepa,Cours,High,30,2026-10-16,2,2,10,1,True
+426,2026-10-15,Proba,Series,High,201,2026-10-24,9,3,10,0,True
+427,2026-10-16,Big Data,Tests,Medium,193,2026-10-21,5,4,10,0,True
+428,2026-10-16,ML,TP,Low,42,2026-10-26,10,4,10,1,True
+429,2026-10-17,Data Warehouse,Cours,Medium,108,2026-10-18,1,5,10,0,True
+430,2026-10-17,Data Warehouse,Series,Medium,104,2026-10-25,8,5,10,1,True
+431,2026-10-18,Python,Cours,Medium,126,2026-10-28,10,6,10,1,True
+432,2026-10-18,TCF prepa,TP,Medium,56,2026-10-24,6,6,10,0,True
+433,2026-10-19,Data Warehouse,Tests,Medium,190,2026-10-25,6,0,10,0,True
+434,2026-10-20,Python,TP,Medium,121,2026-10-26,6,1,10,1,True
+435,2026-10-21,ML,Tests,Medium,268,2026-10-31,10,2,10,1,True
+436,2026-10-22,TCF prepa,Tests,High,87,2026-10-26,4,3,10,1,True
+437,2026-10-23,Entretien Campus,TD,Low,141,2026-10-28,5,4,10,0,True
+438,2026-10-23,Data Warehouse,Projects,Medium,198,2026-10-31,8,4,10,1,True
+439,2026-10-24,Data Warehouse,Series,High,203,2026-11-01,8,5,10,0,True
+440,2026-10-24,Proba,Projects,Medium,155,2026-11-03,10,5,10,1,True
+441,2026-10-25,Big Data,TD,Medium,64,2026-10-26,1,6,10,1,True
+442,2026-10-25,Entretien Campus,Projects,Medium,121,2026-10-29,4,6,10,1,True
+443,2026-10-26,Proba,Tests,Low,171,2026-10-27,1,0,10,0,True
+444,2026-10-26,Entretien Campus,TD,Medium,163,2026-11-02,7,0,10,1,True
+445,2026-10-27,Entretien Campus,Tests,High,147,2026-11-02,6,1,10,1,True
+446,2026-10-28,Languages,Cours,Medium,149,2026-11-02,5,2,10,0,True
+447,2026-10-29,Big Data,Projects,Medium,220,2026-11-02,4,3,10,1,True
+448,2026-10-30,Entretien Campus,TD,Medium,185,2026-11-02,3,4,10,1,True
+449,2026-10-30,TCF prepa,Cours,Medium,209,2026-11-01,2,4,10,1,True
+450,2026-10-31,Proba,TP,Low,260,2026-11-05,5,5,10,0,True
+451,2026-10-31,Data Warehouse,TP,Medium,150,2026-11-01,1,5,10,0,True
+452,2026-11-01,Languages,Cours,Medium,265,2026-11-08,7,6,11,0,True
+453,2026-11-02,RO,TD,Low,194,2026-11-11,9,0,11,1,True
+454,2026-11-03,ML,TD,Medium,185,2026-11-05,2,1,11,0,True
+455,2026-11-03,Data Warehouse,Tests,Medium,217,2026-11-11,8,1,11,1,True
+457,2026-11-04,Python,TP,Low,281,2026-11-05,1,2,11,0,True
+459,2026-11-06,Languages,TD,High,246,2026-11-08,2,4,11,0,True
+461,2026-11-08,Data Warehouse,TP,Medium,297,2026-11-12,4,6,11,1,True
+462,2026-11-08,TCF prepa,Tests,Medium,174,2026-11-10,2,6,11,1,True

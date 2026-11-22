@@ -13,6 +13,8 @@ def create_tables():
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             title TEXT NOT NULL,
             subject TEXT,
+            task_type TEXT DEFAULT 'Cours',
+            created_date TEXT,
             due_date TEXT,
             priority TEXT DEFAULT 'Medium'
                 CHECK(priority IN ('Low', 'Medium', 'High')),
@@ -20,6 +22,31 @@ def create_tables():
                 CHECK(status IN ('Pending', 'Completed')),
             estimated_duration INTEGER
         )
+    """)
+
+    # Add new columns to existing databases if necessary
+    cursor.execute("PRAGMA table_info(tasks)")
+    existing_columns = [
+        column[1] for column in cursor.fetchall()
+    ]
+
+    if "task_type" not in existing_columns:
+        cursor.execute("""
+            ALTER TABLE tasks
+            ADD COLUMN task_type TEXT DEFAULT 'Cours'
+        """)
+
+    if "created_date" not in existing_columns:
+        cursor.execute("""
+            ALTER TABLE tasks
+            ADD COLUMN created_date TEXT
+        """)
+
+    # Give existing tasks today's date as a migration fallback
+    cursor.execute("""
+        UPDATE tasks
+        SET created_date = DATE('now')
+        WHERE created_date IS NULL
     """)
 
     # 2. Activities: Study, Gym, Volleyball
@@ -66,3 +93,4 @@ def create_tables():
 
 if __name__ == "__main__":
     create_tables()
+

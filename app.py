@@ -17,6 +17,8 @@ from modules.habits import (
     log_habit,
     get_habit_logs
 )
+from machine_learning.predict import predict_task_completion
+from modules.ai_agent import chat_with_lifeos
 
 # Page configuration
 st.set_page_config(
@@ -41,17 +43,72 @@ st.header("📊 Your Personal Dashboard")
 dashboard_tasks = get_all_tasks()
 dashboard_activities = get_all_activities()
 
+# ==========================================
+# AUTOMATED TASK REMINDERS
+# ==========================================
+
+st.subheader("🔔 Automatic Task Reminders")
+
+today = date.today()
+
+overdue_tasks = []
+due_today_tasks = []
+upcoming_tasks = []
+
+for task in dashboard_tasks:
+
+    task_id = task[0]
+    title = task[1]
+    due_date = task[5]
+    status = task[7]
+
+    if status != "Pending" or not due_date:
+        continue
+
+    deadline = date.fromisoformat(str(due_date)[:10])
+
+    if deadline < today:
+        overdue_tasks.append((title, deadline))
+
+    elif deadline == today:
+        due_today_tasks.append((title, deadline))
+
+    elif (deadline - today).days <= 3:
+        upcoming_tasks.append((title, deadline))
+
+
+if overdue_tasks:
+    st.error(f"🚨 {len(overdue_tasks)} overdue task(s)")
+
+    for title, deadline in overdue_tasks:
+        st.write(f"- **{title}** — Overdue since {deadline}")
+
+if due_today_tasks:
+    st.warning(f"⏰ {len(due_today_tasks)} task(s) due today")
+
+    for title, deadline in due_today_tasks:
+        st.write(f"- **{title}** — Due today")
+
+if upcoming_tasks:
+    st.info(f"📅 {len(upcoming_tasks)} upcoming deadline(s)")
+
+    for title, deadline in upcoming_tasks:
+        st.write(f"- **{title}** — Due {deadline}")
+
+if not overdue_tasks and not due_today_tasks and not upcoming_tasks:
+    st.success("You're all clear! No urgent deadlines.")
+
 # Task statistics
 total_tasks = len(dashboard_tasks)
 
 completed_tasks = sum(
     1 for task in dashboard_tasks
-    if task[5] == "Completed"
+    if task[7] == "Completed"
 )
 
 pending_tasks = sum(
     1 for task in dashboard_tasks
-    if task[5] == "Pending"
+    if task[7] == "Pending"
 )
 
 # Activity statistics (duration is in minutes)
@@ -166,7 +223,9 @@ with st.expander("➕ Add a New Task", expanded=True):
 
         title = st.text_input("Task Title")
         subject = st.text_input("Subject")
-
+        task_type = st.selectbox("Task Type",
+        ["Cours", "TD", "TP", "Projects", "Series", "Tests"])
+        
         col1, col2, col3 = st.columns(3)
 
         with col1:
@@ -192,6 +251,7 @@ with st.expander("➕ Add a New Task", expanded=True):
                 add_task(
                     title=title.strip(),
                     subject=subject.strip() or None,
+                    task_type=task_type,
                     due_date=str(due_date),
                     priority=priority,
                     estimated_duration=duration
@@ -202,6 +262,7 @@ with st.expander("➕ Add a New Task", expanded=True):
 
             else:
                 st.error("Please enter a task title.")
+
 
 # Display tasks
 st.divider()
@@ -218,10 +279,12 @@ else:
         task_id = task[0]
         title = task[1]
         subject = task[2]
-        due_date = task[3]
-        priority = task[4]
-        status = task[5]
-        duration = task[6]
+        task_type = task[3]
+        created_date = task[4]
+        due_date = task[5]
+        priority = task[6]
+        status = task[7]
+        duration = task[8]
 
         with st.container(border=True):
 
@@ -230,6 +293,8 @@ else:
             with col1:
                 st.markdown(f"**{title}**")
                 st.caption(f"Subject: {subject or 'N/A'}")
+                st.caption(f"Type: {task_type}")
+                st.caption(f"Created: {created_date}")
                 st.caption(f"Deadline: {due_date}")
 
             with col2:
@@ -253,6 +318,41 @@ else:
                 ):
                     delete_task(task_id)
                     st.rerun()
+
+            # ==========================================
+            # ML TASK COMPLETION PREDICTION
+            # ==========================================
+
+            if status == "Pending" and created_date and due_date and duration is not None:
+
+                try:
+                    result = predict_task_completion(
+                        subject=subject,
+                        task_type=task_type,
+                        priority=priority,
+                        estimated_duration=duration,
+                        created_date=created_date,
+                        due_date=due_date
+                    )
+
+                    probability = result["on_time_probability"]
+
+                    st.write("**ML Prediction (Experimental)**")
+
+                    if result["prediction"] == 1:
+                        st.success("Model estimates likely on-time completion")
+                    else:
+                        st.warning("Model flags potential delay")
+
+                    st.progress(probability)
+
+                    st.caption(
+                        f"Estimated on-time score: {probability:.1%}"
+                    )
+
+                except Exception as e:
+                    st.error(f"Prediction unavailable: {e}")
+
 
 
 # ==========================================
@@ -414,3 +514,92 @@ else:
                     ):
                         log_habit(habit_id, today, True)
                         st.rerun()
+
+# ==========================================
+# LIFEOS AI ASSISTANT
+# ==========================================
+
+st.divider()
+st.header("🤖 LifeOS AI Assistant")
+
+st.caption(
+    "Ask questions about your study tasks, activities, "
+    "habits and productivity."
+)
+
+# Initialize chat history
+if "lifeos_chat_history" not in st.session_state:
+    st.session_state.lifeos_chat_history = []
+
+# Display previous messages
+for item in st.session_state.lifeos_chat_history:
+    with st.chat_message(item["role"]):
+        st.markdown(item["content"])
+
+# Chat input
+if prompt := st.chat_input(
+    "Ask LifeOS something..."
+):
+
+    # Save and display user message
+    st.session_state.lifeos_chat_history.append({
+        "role": "user",
+        "content": prompt
+    })
+
+    with st.chat_message("user"):
+        st.markdown(prompt)
+
+    # Generate AI response
+    with st.chat_message("assistant"):
+
+        with st.spinner("LifeOS is thinking..."):
+
+            try:
+                answer = chat_with_lifeos(
+                    prompt,
+                    st.session_state.lifeos_chat_history[:-1]
+                )
+
+            except Exception as error:
+                answer = (
+                    "Sorry, the AI service is temporarily unavailable. "
+                    f"Error: {error}"
+                )
+
+        st.markdown(answer)
+
+    # Save assistant response
+    st.session_state.lifeos_chat_history.append({
+        "role": "assistant",
+        "content": answer
+    })
+
+# ==========================================
+# AUTOMATED DAILY PRODUCTIVITY SUMMARY
+# ==========================================
+
+st.divider()
+st.subheader("📊 Daily Productivity Summary")
+
+if st.button("✨ Generate Today's Summary"):
+
+    with st.spinner("Analyzing your LifeOS data..."):
+
+        try:
+            summary = chat_with_lifeos(
+                "Generate a concise daily productivity report using my "
+                "current LifeOS database. Include pending and overdue "
+                "tasks, upcoming deadlines, recent study/gym/volleyball "
+                "activities, and recent habit progress. "
+                "Give me three practical priorities. "
+                "Clearly distinguish missing data from zero activity."
+            )
+
+            st.session_state.daily_productivity_summary = summary
+
+        except Exception as error:
+            st.error(f"Could not generate summary: {error}")
+
+if "daily_productivity_summary" in st.session_state:
+    st.markdown(st.session_state.daily_productivity_summary)
